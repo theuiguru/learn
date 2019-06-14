@@ -1,56 +1,68 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Learn 2 Install</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/><style type="text/css">
-header {border-bottom:3px solid #00E676; position:fixed; top:0; background:#fff;} h1 {border-left:3px solid #00bcd4; padding-left:20px;}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"><style type="text/css">
+.navbar {margin-bottom:0 !important;}
+.navbar-inverse {background-color:#37474f; border:none;}
+.navbar-inverse .navbar-brand {color:#fff; border-left:3px solid #00e676;}
+section {display:grid; grid-template-columns:repeat(2, 1fr);}
+.item {display:flex; flex-direction:column; align-items:center; justify-content:center; height:200px;}
+.item:nth-child(1) {background:#ffde57;}
+.item:nth-child(2) {background:#f44336;}
+.item:nth-child(3) {background:#8892be;}
+.item:nth-child(4) {background:#f7df1e;}
+.item:nth-child(5) {background:#d32f2f;}
+.item:nth-child(6) {background:#9c27b0;}
+.item:nth-child(7) {background:#2196f3;}
+.item:nth-child(8) {background:#00bcd4;}
+.item:nth-child(9) {background:#f29111;}
+.item:nth-child(10) {background:#4caf50;}
+.item:nth-child(11) {background:#c8dcff;}
+.item:nth-child(12) {background:#646464; color:#fff;}
+.item:nth-child(13) {background:#fa4e2d;}
+.item:nth-child(14) {background:#ee427c;}
+@media(max-width:700px) { section {display:block;} }
 </style></head><body>
-<div class="navbar navbar-inverse navbar-static-top"><div class="container">
-  <div class="navbar-left"><a href="#" class="navbar-brand">Learn 2 Install</a></div>
-</div></div>
-<section><div class="container">
-  <div class="alert alert-warning">Site is under construction, please bear with us!</div>
-  <article><h2>Java</h2>
-    <code><ol>
-      <li>Install the JDK: Download "Java Platform (JDK)" from Oracle OTN. Run the installer, using all the defaults.</li>
-    </ol></code>
-    <h3>NetBeans IDE</h3><code><ol><li>Download "NetBeans IDE" installer from http://netbeans.org/downloads/index.html.</li></ol></code>
-    <h3>Eclipse IDE</h3><code><ol><li>Download Eclipse from https://www.eclipse.org/downloads. Under "Get Eclipse Neon" ⇒ Click "Download Packages". For beginners, choose the 3rd entry "Eclipse IDE for Java Developers" (32-bit or 64-bit) (e.g., "eclipse-java-neon-2-win32-x86_64.zip" 161MB) ⇒ Download.</li></ol></code>
-    <h3>Oracle JDeveloper IDE</h3><code><ol><li>Go to http://www.oracle.com/technetwork/developer-tools/jdev/downloads</li></ol></code>
-    <h3>Spring</h3><code><ol><li>Go to https://start.spring.io</li></ol></code>
-  </article>
-  <article><h2>ColdFusion</h2><code><ol><li>Open up a web browser and go to: http://www.adobe.com/go/trycoldfusion</li><li>Sign in with your Adobe ID. If you do not have an Adobe account, click on the "Create an Adobe account" button on the left.</li>
-  </ol></code></article>
-  <article><h2>SQL</h2>
-    <h3>MySQL</h3><code><ol><li>Go to http://dev.mysql.com/downloads/</li></ol></code>
-    <h3>Oracle SQL</h3><code><ol><li>Go to http://www.oracle.com/technetwork/products/express-edition/downloads/index.html</li></ol></code>
-    <h3>SQL Server</h3><code><ol><li>Go to http://bit.ly/dl-sql-express-2012</li></ol></code>
-  </article>
-  <article><h2>R</h2>
-    <h3>R-Project</h3>
-    <code>
-      <ol>
-        <li>Go to https://cran.r-project.org/mirrors.html and scroll down to USA and click the first link you can find <i>Usually University of California, Berkeley, CA</i></li>
-        <li>Click to download whatever OS version you are running.
-          <ol><lh>Windows</lh>
-            <li>Click base</li>
-            <li>Click Download R 3.5.1 for Windows</li>
-            <li>Next, click through to set all as default values</li>
-            <li>Click Finish</li>
-          </ol>
-        </li>
-      </ol>
-    </code>
-    <h3>RStudio</h3>
-    <code>
-      <ol>
-        <li>Go to https://www.rstudio.com/products/rstudio/download</li>
-        <li>Click on Free Download link</li>
-        <li>Under Installers, click on whatever OS you are running on
-          <ol><lh>Windows</lh>
-            <li>Click the latest version of RStudio installer</li>
-            <li>Click through to set all as default values</li>
-            <li>Click Finish</li>
-          </ol>
-        </li>
-      </ol>
-    </code>
-  </article>
-</div></section></body></html>
+<div class="navbar navbar-inverse navbar-static-top"><div class="container"><div class="navbar-left"><a href="#" class="navbar-brand">Learn 2 Install</a></div></div></div>
+<section>
+  <div class="item" data-title="Python" data-toggle="modal" data-target="#myModal"><h1>Python</h1></div>
+  <div class="item" data-title="Ruby" data-toggle="modal" data-target="#myModal"><h1>Ruby</h1></div>
+  <div class="item" data-title="PHP" data-toggle="modal" data-target="#myModal"><h1>PHP</h1></div>
+  <div class="item" data-title="JavaScript" data-toggle="modal" data-target="#myModal"><h1>JavaScript</h1></div>
+  <div class="item" data-title="Java" data-toggle="modal" data-target="#myModal"><h1>Java</h1></div>
+  <div class="item" data-title="C#" data-toggle="modal" data-target="#myModal"><h1>C#</h1></div>
+  <div class="item" data-title="C++" data-toggle="modal" data-target="#myModal"><h1>C++</h1></div>
+  <div class="item" data-title="C" data-toggle="modal" data-target="#myModal"><h1>C</h1></div>
+  <div class="item" data-title="SQL" data-toggle="modal" data-target="#myModal"><h1>SQL</h1></div>
+  <div class="item" data-title="R" data-toggle="modal" data-target="#myModal"><h1>R</h1></div>
+  <div class="item" data-title="ColdFusion" data-toggle="modal" data-target="#myModal"><h1>ColdFusion</h1></div>
+  <div class="item" data-title="Markdown" data-toggle="modal" data-target="#myModal"><h1>Markdown</h1></div>
+  <div class="item" data-title="Swift" data-toggle="modal" data-target="#myModal"><h1>Swift</h1></div>
+  <div class="item" data-title="Kotlin" data-toggle="modal" data-target="#myModal"><h1>Kotlin</h1></div>
+</section>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"></h4>
+      </div>
+      <div class="modal-body">
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><script>
+$(".item").on("click", function(e){
+  e.preventDefault();
+  var title = $(this).data('title');
+  $("h4#myModalLabel").html("Learn 2 Install: " + title);
+});
+</script></body></html>
