@@ -3,39 +3,39 @@
 section {display:grid; grid-template-columns:repeat(2, 1fr);}
 .item {display:flex; flex-direction:column; align-items:center; justify-content:center; height:200px;}
 .item:nth-child(1) {background:#ffde57;}
-.item:nth-child(2) {background:#f44336;}
+.item:nth-child(2) {background:#cc342d;}
 .item:nth-child(3) {background:#8892be;}
 .item:nth-child(4) {background:#f7df1e;}
-.item:nth-child(5) {background:#d32f2f;}
+.item:nth-child(5) {background:#ff0000;}
 .item:nth-child(6) {background:#9c27b0;}
 .item:nth-child(7) {background:#2196f3;}
 .item:nth-child(8) {background:#00bcd4;}
-.item:nth-child(9) {background:#f29111;}
-.item:nth-child(10) {background:#4caf50;}
+.item:nth-child(9) {background:#fbb034;}
+.item:nth-child(10) {background:#0abf53;}
 .item:nth-child(11) {background:#c8dcff;}
 .item:nth-child(12) {background:#646464; color:#fff;}
-.item:nth-child(13) {background:#fa4e2d;}
+.item:nth-child(13) {background:#f47721;}
 .item:nth-child(14) {background:#ee427c;}
 @media(max-width:700px) { section {display:block;} }
 </style></head><body>
 <section>
-  <div class="item" data-title="Python" data-toggle="modal" data-target="#myModal"><h1>Python</h1></div>
-  <div class="item" data-title="Ruby" data-toggle="modal" data-target="#myModal"><h1>Ruby</h1></div>
-  <div class="item" data-title="PHP" data-toggle="modal" data-target="#myModal"><h1>PHP</h1></div>
-  <div class="item" data-title="JavaScript" data-toggle="modal" data-target="#myModal"><h1>JavaScript</h1></div>
-  <div class="item" data-title="Java" data-toggle="modal" data-target="#myModal"><h1>Java</h1></div>
-  <div class="item" data-title="C#" data-toggle="modal" data-target="#myModal"><h1>C#</h1></div>
-  <div class="item" data-title="C++" data-toggle="modal" data-target="#myModal"><h1>C++</h1></div>
-  <div class="item" data-title="C" data-toggle="modal" data-target="#myModal"><h1>C</h1></div>
-  <div class="item" data-title="SQL" data-toggle="modal" data-target="#myModal"><h1>SQL</h1></div>
-  <div class="item" data-title="R" data-toggle="modal" data-target="#myModal"><h1>R</h1></div>
-  <div class="item" data-title="ColdFusion" data-toggle="modal" data-target="#myModal"><h1>ColdFusion</h1></div>
-  <div class="item" data-title="Markdown" data-toggle="modal" data-target="#myModal"><h1>Markdown</h1></div>
-  <div class="item" data-title="Swift" data-toggle="modal" data-target="#myModal"><h1>Swift</h1></div>
-  <div class="item" data-title="Kotlin" data-toggle="modal" data-target="#myModal"><h1>Kotlin</h1></div>
+  <div class="item" data-title="Python" data-toggle="modal" data-target="#myModal"><h2>Python</h2></div>
+  <div class="item" data-title="Ruby" data-toggle="modal" data-target="#myModal"><h2>Ruby</h2></div>
+  <div class="item" data-title="PHP" data-toggle="modal" data-target="#myModal"><h2>PHP</h2></div>
+  <div class="item" data-title="JavaScript" data-toggle="modal" data-target="#myModal"><h2>JavaScript</h2></div>
+  <div class="item" data-title="Java" data-toggle="modal" data-target="#myModal"><h2>Java</h2></div>
+  <div class="item" data-title="C#" data-toggle="modal" data-target="#myModal"><h2>C#</h2></div>
+  <div class="item" data-title="C++" data-toggle="modal" data-target="#myModal"><h2>C++</h2></div>
+  <div class="item" data-title="C" data-toggle="modal" data-target="#myModal"><h2>C</h2></div>
+  <div class="item" data-title="SQL" data-toggle="modal" data-target="#myModal"><h2>SQL</h2></div>
+  <div class="item" data-title="R" data-toggle="modal" data-target="#myModal"><h2>R</h2></div>
+  <div class="item" data-title="ColdFusion" data-toggle="modal" data-target="#myModal"><h2>ColdFusion</h2></div>
+  <div class="item" data-title="Markdown" data-toggle="modal" data-target="#myModal"><h2>Markdown</h2></div>
+  <div class="item" data-title="Swift" data-toggle="modal" data-target="#myModal"><h2>Swift</h2></div>
+  <div class="item" data-title="Kotlin" data-toggle="modal" data-target="#myModal"><h2>Kotlin</h2></div>
 </section>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="myModalLabel"></h5>
@@ -45,16 +45,77 @@ section {display:grid; grid-template-columns:repeat(2, 1fr);}
       </div>
       <div class="modal-body"></div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script><script>
+var data = [
+  {
+    "language": "Python",
+    "content": "<li>Go to Python, </li><li>Then, </li><li>Finally, </li>"
+  },
+  {
+    "language": "Ruby",
+    "content": "<li>Go to Ruby, </li><li>Then, </li><li>Finally, </li>"
+  },
+  {
+    "language": "PHP",
+    "content": "<li>Go to PHP, </li><li>Then, </li><li>Finally, </li>"
+  },
+  {
+    "language": "JavaScript",
+    "content": "<li>Go to JavaScript, </li><li>Then, </li><li>Finally, </li>"
+  },
+  {
+    "language": "Java",
+    "content": "<li>Go to Java, </li><li>Then, </li><li>Finally, </li>"
+  },
+  {
+    "language": "C#",
+    "content": "<li>Go to C#, </li><li>Then, </li><li>Finally, </li>"
+  },
+  {
+    "language": "C++",
+    "content": "<li>Go to C++, </li><li>Then, </li><li>Finally, </li>"
+  },
+  {
+    "language": "C",
+    "content": "<li>Go to C, </li><li>Then, </li><li>Finally, </li>"
+  },
+  {
+    "language": "SQL",
+    "content": "<li>Go to SQL, </li><li>Then, </li><li>Finally, </li>"
+  },
+  {
+    "language": "R",
+    "content": "<li>Go to R, </li><li>Then, </li><li>Finally, </li>"
+  },
+  {
+    "language": "ColdFusion",
+    "content": "<li>Go to ColdFusion, </li><li>Then, </li><li>Finally, </li>"
+  },
+  {
+    "language": "Markdown",
+    "content": "<li>Go to Markdown, </li><li>Then, </li><li>Finally, </li>"
+  },
+  {
+    "language": "Swift",
+    "content": "<li>Go to Swift, </li><li>Then, </li><li>Finally, </li>"
+  },
+  {
+    "language": "Kotlin",
+    "content": "<li>Go to Kotlin, </li><li>Then, </li><li>Finally, </li>"
+  }
+];
 $(".item").on("click", function(e){
   e.preventDefault();
-  var title = $(this).data('title');
-  $("#myModalLabel").html("Learn 2 Install: " + title);
+  var title = this.dataset.title; //$(this).data('title');
+  document.querySelector("#myModalLabel").innerText = "Learn 2 Install: " + title;
+  for(i in data)
+    if(data[i].language == title)
+      document.querySelector(".modal-body").innerHTML = '<ol>' + data[i].content + '</ol>';
 });
 </script></body></html>
