@@ -113,9 +113,9 @@ var data = [
 $(".item").on("click", function(e){
   e.preventDefault();
   var title = this.dataset.title; //$(this).data('title');
-  document.querySelector("#myModalLabel").innerText = "Learn 2 Install: " + title;
+  document.querySelector("#myModalLabel").textContent = "Learn 2 Install: " + title;
   for(i in data)
     if(data[i].language == title)
-      document.querySelector(".modal-body").innerHTML = '<ol>' + data[i].content + '</ol>';
+      document.querySelector(".modal-body").textContent = '<ol>' + data[i].content + '</ol>';
 });
 </script></body></html>
