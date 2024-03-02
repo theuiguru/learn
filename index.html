@@ -116,6 +116,6 @@ $(".item").on("click", function(e){
   document.querySelector("#myModalLabel").innerText = "Learn 2 Install: " + title;
   for(i in data)
     if(data[i].language == title)
-      document.querySelector(".modal-body .row").innerHTML = `<div class="col-md-4"><h4>For Windows</h4><ol>${data[i].content}</ol></div><div class="col-md-4"><h4>For Mac</h4><ol>${data[i].content}</ol></div>`;
+      document.querySelector(".modal-body .row").innerHTML = `<div class="col-md-6"><h4>For Windows</h4><ol>${data[i].content}</ol></div><div class="col-md-6"><h4>For Mac</h4><ol>${data[i].content}</ol></div>`;
 });
 </script></body></html>
